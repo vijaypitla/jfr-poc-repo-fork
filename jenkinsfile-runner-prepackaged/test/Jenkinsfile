@@ -2,9 +2,9 @@ pipeline {
   agent any
 
   stages {
-    stage('Git Checkout') {
+    stage('Printing Hello World') {
       steps {
-        git url: "https://github.com/spring-projects/spring-petclinic.git", branch: "main"
+        echo "Printing echo from 'jfr-poc-repo-fork/jenkinsfile-runner-prepackaged/test' path"
       }
     }
   }
